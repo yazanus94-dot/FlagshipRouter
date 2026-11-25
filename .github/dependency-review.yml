@@ -1,0 +1,10 @@
+# Dependency Review Configuration
+# Fail on high/critical vulnerabilities in PRs
+
+fail-on-severity: high
+allow-ghsas:
+  # Allow specific GHSA IDs if they are false positives or accepted risks
+  # GHSA-xxxx-xxxx-xxxx: "Reason for allowance"
+
+# Severity levels: low, moderate, high, critical
+# This config will fail PRs that introduce high or critical vulnerabilities

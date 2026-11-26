@@ -60,7 +60,7 @@ PUBLIC.md
 Thanks.md
 PUBLIC.en.md
 PR/*
-package-lock.json
+# Lockfiles are committed so `npm ci` and dependency caching work in CI.
 
 
 #Ignore vscode AI rules

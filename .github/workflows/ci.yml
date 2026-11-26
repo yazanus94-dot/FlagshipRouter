@@ -249,14 +249,9 @@ jobs:
           name: npm-audit-report
           path: npm-audit-report.json
           retention-days: 30
-      - name: Snyk security scan
-        if: ${{ secrets.SNYK_TOKEN != '' }}
-        uses: snyk/actions/node@master
-        with:
-          command: test
-          args: --severity-threshold=high --all-projects
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      # Snyk was removed rather than kept with `continue-on-error`: the
+      # repository has no SNYK_TOKEN secret, so the step could never produce a
+      # real result. npm audit above is the mandatory dependency gate.
       - name: Scan for secrets (pull request range)
         if: github.event_name == 'pull_request'
         uses: trufflesecurity/trufflehog@main

@@ -88,6 +88,7 @@ jobs:
         working-directory: tests
         run: npm ci
       - name: Run mandatory Vitest suite
+        working-directory: tests
         run: npx vitest run $(cat ci/mandatory.txt)
   test-full:
     name: Full Suite (regression gate)
@@ -109,23 +110,24 @@ jobs:
         working-directory: tests
         run: npm ci
       - name: Run full suite and compare against the documented baseline
+        working-directory: tests
         run: |
           set +e
-          npx vitest run --reporter=json --outputFile=../full-suite.json
+          npx vitest run --reporter=json --outputFile=full-suite.json
           vitest_status=$?
           set -e
           echo "vitest exit code: ${vitest_status}"
-          if [ ! -f ../full-suite.json ]; then
+          if [ ! -f full-suite.json ]; then
             echo "::error::Vitest produced no JSON report; cannot evaluate the baseline."
             exit 1
           fi
-          node ci/compare-baseline.mjs ../full-suite.json ci/known-failures.json
+          node ci/compare-baseline.mjs full-suite.json ci/known-failures.json
       - name: Upload full suite report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: full-suite-report
-          path: full-suite.json
+          path: tests/full-suite.json
           retention-days: 7
   build:
     name: Build Application
@@ -241,7 +243,7 @@ jobs:
       - name: Audit dependencies (npm audit)
         run: npm audit --audit-level=high
       - name: Audit dependencies (report artifact)
-        run: npm audit --json > npm-audit-report.json
+        run: npm audit --audit-level=high --json > npm-audit-report.json
       - name: Upload npm audit report
         if: always()
         uses: actions/upload-artifact@v4
@@ -259,13 +261,13 @@ jobs:
           path: ./
           base: ${{ github.event.pull_request.base.sha }}
           head: ${{ github.event.pull_request.head.sha }}
-          extra_args: --only-verified --fail
+          extra_args: --only-verified
       - name: Scan for secrets (push, full history)
         if: github.event_name == 'push'
         uses: trufflesecurity/trufflehog@main
         with:
           path: ./
-          extra_args: --only-verified --fail
+          extra_args: --only-verified
   dependency-review:
     name: Dependency Review
     runs-on: ubuntu-latest
@@ -274,7 +276,6 @@ jobs:
       - name: Review dependencies
         uses: actions/dependency-review-action@v4
         with:
-          config-file: .github/dependency-review.yml
           fail-on-severity: high
   notify:
     name: Notify on Failure

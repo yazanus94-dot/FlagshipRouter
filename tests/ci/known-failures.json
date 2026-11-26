@@ -1,0 +1,222 @@
+[
+  {
+    "file": "translator/golden-url-header.test.js",
+    "test": "GOLDEN buildHeaders (default executor providers) cline → headers (apiKey / oauth)",
+    "reason": "Error: Snapshot `GOLDEN buildHeaders (default executor providers) > cline → headers (apiKey / oauth) 1` mismatched"
+  },
+  {
+    "file": "translator/golden-url-header.test.js",
+    "test": "GOLDEN buildHeaders (default executor providers) clinepass → headers (apiKey / oauth)",
+    "reason": "Error: Snapshot `GOLDEN buildHeaders (default executor providers) > clinepass → headers (apiKey / oauth) 1` mismatched"
+  },
+  {
+    "file": "translator/golden-url-header.test.js",
+    "test": "GOLDEN buildHeaders (default executor providers) kimi → headers (apiKey / oauth)",
+    "reason": "Error: Snapshot `GOLDEN buildHeaders (default executor providers) > kimi → headers (apiKey / oauth) 1` mismatched"
+  },
+  {
+    "file": "translator/golden-url-header.test.js",
+    "test": "GOLDEN buildHeaders (default executor providers) minimax-code → headers (apiKey / oauth)",
+    "reason": "Error: Snapshot `GOLDEN buildHeaders (default executor providers) > minimax-code → headers (apiKey / oauth) 1` mismatched"
+  },
+  {
+    "file": "translator/golden-url-header.test.js",
+    "test": "GOLDEN buildHeaders (default executor providers) minimax-code-global → headers (apiKey / oauth)",
+    "reason": "Error: Snapshot `GOLDEN buildHeaders (default executor providers) > minimax-code-global → headers (apiKey / oauth) 1` mismatched"
+  },
+  {
+    "file": "unit/cached-token-e2e.test.js",
+    "test": "__suite__",
+    "reason": "EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-cached-e2e-egzj8Q'"
+  },
+  {
+    "file": "unit/claude-header-forwarding.test.js",
+    "test": "proxyAwareFetch — api.anthropic.com routing routes api.anthropic.com to gotScraping (non-streaming) and returns ok response",
+    "reason": "AssertionError: expected \"vi.fn()\" to be called once, but got 0 times"
+  },
+  {
+    "file": "unit/codebuddy-block-backoff.test.js",
+    "test": "CodeBuddy Intl block backoff (#5024) keeps the same text request-scoped for provider openai",
+    "reason": "AssertionError: expected { shouldFallback: false, …(2) } to deeply equal { shouldFallback: false, …(1) }"
+  },
+  {
+    "file": "unit/codebuddy-block-backoff.test.js",
+    "test": "CodeBuddy Intl block backoff (#5024) keeps the same text request-scoped for provider codebuddy-cn",
+    "reason": "AssertionError: expected { shouldFallback: false, …(2) } to deeply equal { shouldFallback: false, …(1) }"
+  },
+  {
+    "file": "unit/codebuddy-block-backoff.test.js",
+    "test": "CodeBuddy Intl block backoff (#5024) keeps the same text request-scoped for provider null",
+    "reason": "AssertionError: expected { shouldFallback: false, …(2) } to deeply equal { shouldFallback: false, …(1) }"
+  },
+  {
+    "file": "unit/codebuddy-block-backoff.test.js",
+    "test": "CodeBuddy Intl block backoff (#5024) does not classify every 11128 code as a block",
+    "reason": "AssertionError: expected { shouldFallback: false, …(2) } to deeply equal { shouldFallback: false, …(1) }"
+  },
+  {
+    "file": "unit/codebuddy-block-backoff.test.js",
+    "test": "CodeBuddy Intl block backoff (#5024) still stops a combo on a malformed CodeBuddy request",
+    "reason": "AssertionError: expected \"vi.fn()\" to be called 1 times, but got 2 times"
+  },
+  {
+    "file": "unit/combo-autoswitch.test.js",
+    "test": "detectRequiredCapabilities web_search tool -> search",
+    "reason": "AssertionError: expected false to be true // Object.is equality"
+  },
+  {
+    "file": "unit/combo-autoswitch.test.js",
+    "test": "reorderByCapabilities keeps order when no model matches",
+    "reason": "AssertionError: expected [ 'deepseek/deepseek-chat', …(1) ] to be [ 'deepseek/deepseek-chat', …(1) ] // Object.is equality"
+  },
+  {
+    "file": "unit/combo-credit-fallback.test.js",
+    "test": "combo credit fallback routes a 400 response correctly: Bad request",
+    "reason": "AssertionError: expected Response { status: 200, statusText: '', headers: Headers { 'content-type': 'application/json' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true },"
+  },
+  {
+    "file": "unit/compatible-provider-connections.test.js",
+    "test": "compatible provider connections API creates one API-key connection for an OpenAI-compatible node",
+    "reason": "Error: EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-compatible-provider-cGMh9K'"
+  },
+  {
+    "file": "unit/db-benchmark.test.js",
+    "test": "__suite__",
+    "reason": "Cannot find package 'lowdb' imported from C:/Users/Souq AL_Bostan/Projects/my-first-project/FlagshipRouter/tests/unit/db-benchmark.test.js"
+  },
+  {
+    "file": "unit/db-concurrent.test.js",
+    "test": "__suite__",
+    "reason": "EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-concurrent-e1ijKI'"
+  },
+  {
+    "file": "unit/db-sqlite-vs-lowdb.test.js",
+    "test": "__suite__",
+    "reason": "EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-db-compare-a7Tmdo'"
+  },
+  {
+    "file": "unit/embeddings.cloud.test.js",
+    "test": "__suite__",
+    "reason": "Cannot find module '/cloud/src/handlers/embeddings.js' imported from C:/Users/Souq AL_Bostan/Projects/my-first-project/FlagshipRouter/tests/unit/embeddings.cloud.test.js"
+  },
+  {
+    "file": "unit/headroom-detect.test.js",
+    "test": "headroom detect prefers the interpreter that actually has headroom-ai installed",
+    "reason": "AssertionError: expected '\\opt\\hr\\bin\\python.exe' to be '/opt/hr/bin/python3' // Object.is equality"
+  },
+  {
+    "file": "unit/headroom-responses-format.test.js",
+    "test": "compressWithHeadroom openai-responses format (#1998) skips Responses tool/reasoning history instead of collapsing it into a message (#2132)",
+    "reason": "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+  },
+  {
+    "file": "unit/mimo-free.live.test.js",
+    "test": "MiMo Free bootstrap (live) bootstrap returns 200 with JWT",
+    "reason": "SyntaxError: Unexpected token '<', \"<html>\r"
+  },
+  {
+    "file": "unit/mimo-free.live.test.js",
+    "test": "MiMo Free anti-abuse gate (live) chat WITH Chrome User-Agent → 200",
+    "reason": "SyntaxError: Unexpected token '<', \"<html>\r"
+  },
+  {
+    "file": "unit/model-routing.test.js",
+    "test": "model routing keeps built-in provider aliases ahead of compatible node prefixes",
+    "reason": "Error: EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-model-routing-IAYRE0'"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import returns not-found when no macOS cursor db paths are accessible",
+    "reason": "AssertionError: expected 'Cursor database not found. Checked lo…' to contain 'Cursor database not found in known ma…'"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import returns descriptive error if macOS db file exists but cannot be opened",
+    "reason": "AssertionError: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import extracts tokens using exact keys",
+    "reason": "AssertionError: expected false to be true // Object.is equality"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import unwraps JSON-encoded string values",
+    "reason": "AssertionError: expected false to be true // Object.is equality"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import falls back to fuzzy key matching on macOS when exact keys are missing",
+    "reason": "AssertionError: expected false to be true // Object.is equality"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import returns login-prompt error when tokens are missing even after fallback",
+    "reason": "AssertionError: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import linux uses single hardcoded path and original error message",
+    "reason": "AssertionError: expected 'Cursor database not found. Checked lo…' to be 'Cursor database not found. Make sure …' // Object.is equality"
+  },
+  {
+    "file": "unit/oauth-cursor-auto-import.test.js",
+    "test": "GET /api/oauth/cursor/auto-import unsupported platform returns 400",
+    "reason": "AssertionError: expected 200 to be 400 // Object.is equality"
+  },
+  {
+    "file": "unit/openai-to-claude.test.js",
+    "test": "openaiToClaudeResponse omits empty Read pages tool argument before emitting Claude input deltas",
+    "reason": "AssertionError: expected undefined to be defined"
+  },
+  {
+    "file": "unit/request-details-tab.test.js",
+    "test": "__suite__",
+    "reason": "EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-details-tab-Mn9Zue'"
+  },
+  {
+    "file": "unit/security-audit.test.js",
+    "test": "AUDIT-002: API key masking byApiKey object keys should use masked key, not raw key",
+    "reason": "AssertionError: expected 'import { EventEmitter } from \"events\"…' to contain '${apiKeyMasked}|${r.model}|${r.provid…'"
+  },
+  {
+    "file": "unit/translator-request-normalization.test.js",
+    "test": "request normalization claudeToOpenAIRequest flattens text-only content arrays into string",
+    "reason": "AssertionError: expected [ { type: 'text', text: 'hi' }, …(1) ] to be 'hi\\nthere' // Object.is equality"
+  },
+  {
+    "file": "unit/translator-request-normalization.test.js",
+    "test": "request normalization filterToOpenAIFormat flattens text-only arrays to string",
+    "reason": "AssertionError: expected [ { type: 'text', text: 'a' }, …(1) ] to be 'a\\nb' // Object.is equality"
+  },
+  {
+    "file": "unit/translator-request-normalization.test.js",
+    "test": "request normalization translateRequest keeps /v1/messages Claude->OpenAI text payloads string-safe",
+    "reason": "AssertionError: expected 'object' to be 'string' // Object.is equality"
+  },
+  {
+    "file": "unit/translator-request-normalization.test.js",
+    "test": "request normalization parseSSELine supports provider raw NDJSON stream lines",
+    "reason": "AssertionError: expected null to deeply equal { model: 'gpt-oss:120b', …(2) }"
+  },
+  {
+    "file": "unit/xai-oauth-service.test.js",
+    "test": "xai/oauth service generates dashboard auth data with CLIProxyAPI PKCE size and discovered endpoints",
+    "reason": "Error: STACK_TRACE_ERROR"
+  },
+  {
+    "file": "unit/xai-oauth-service.test.js",
+    "test": "xai/oauth service exchanges dashboard codes against the discovered xAI token endpoint",
+    "reason": "TypeError: Cannot read properties of undefined (reading 'ok')"
+  },
+  {
+    "file": "unit/zed-live-models.test.js",
+    "test": "__suite__",
+    "reason": "EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-zed-live-MK5LgI'"
+  },
+  {
+    "file": "unit/zed-native-auth.test.js",
+    "test": "__suite__",
+    "reason": "EPERM, Permission denied: 'C:\\Users\\SOUQAL~1\\AppData\\Local\\Temp\\flagshiprouter-zed-auth-ptDpTk'"
+  }
+]

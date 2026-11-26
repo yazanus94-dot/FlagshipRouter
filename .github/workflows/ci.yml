@@ -268,15 +268,6 @@ jobs:
         with:
           path: ./
           extra_args: --only-verified
-  dependency-review:
-    name: Dependency Review
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    steps:
-      - name: Review dependencies
-        uses: actions/dependency-review-action@v4
-        with:
-          fail-on-severity: high
   notify:
     name: Notify on Failure
     runs-on: ubuntu-latest

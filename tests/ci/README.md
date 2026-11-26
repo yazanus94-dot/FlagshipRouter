@@ -58,3 +58,10 @@ page, so the backlog stays measurable without blocking unrelated work.
 the full history on `main`. Snyk was removed rather than kept behind
 `continue-on-error`: the repository has no `SNYK_TOKEN`, so the step could never
 produce a real result.
+
+## Dependency review
+
+The `Dependency Review` GitHub Actions job was **removed**: the
+`actions/dependency-review-action` requires the GitHub Dependency Graph, which
+is not enabled on this repository, so the action always fails here. The
+mandatory dependency gate is the `npm audit` job described above.
